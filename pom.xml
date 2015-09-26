@@ -11,7 +11,7 @@
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>1.4-SNAPSHOT</version>
+  <version>4.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Plexus Components</name>
@@ -26,6 +26,12 @@
     <system>github</system>
     <url>http://github.com/codehaus-plexus/plexus-components/issues</url>
   </issueManagement>
+  <distributionManagement>
+    <site>
+      <id>github:gh-pages</id>
+      <url>scm:git:git@github.com:codehaus-plexus</url><!-- url used only for inheritance -->
+    </site>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
@@ -37,7 +43,7 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-utils</artifactId>
-        <version>3.0.8</version>
+        <version>3.0.22</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
@@ -63,22 +69,6 @@
       </plugin>
     </plugins>
   </build>
-  
-  <profiles>
-    <profile>
-      <id>parent-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-release-plugin</artifactId>
-            <configuration>
-              <arguments>-N -Pplexus-release</arguments>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
   <repositories>
     <repository>
@@ -92,6 +82,4 @@
       </snapshots>
     </repository>
   </repositories>
-
-  
 </project>
