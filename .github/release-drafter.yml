@@ -1,0 +1,2 @@
+_extends: .github
+tag-template: plexus-components-$NEXT_MINOR_VERSION
