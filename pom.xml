@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>10.1-SNAPSHOT</version>
+  <version>10.1-SNAPSHOT</version><!-- convention: major = parent version -->
   <packaging>pom</packaging>
 
   <name>Plexus Components</name>
