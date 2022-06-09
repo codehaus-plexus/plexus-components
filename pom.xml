@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>9.0</version>
+  <version>9.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Plexus Components</name>
@@ -19,7 +19,7 @@
     <connection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</connection>
     <developerConnection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</developerConnection>
     <url>http://github.com/codehaus-plexus/plexus-components</url>
-    <tag>plexus-components-9.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>github</system>
@@ -33,7 +33,7 @@
   </distributionManagement>
 
   <properties>
-    <project.build.outputTimestamp>2022-06-09T19:33:59Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2022-06-09T19:34:05Z</project.build.outputTimestamp>
   </properties>
 
   <dependencyManagement>
