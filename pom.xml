@@ -5,21 +5,24 @@
   <parent>
     <groupId>org.codehaus.plexus</groupId>
     <artifactId>plexus</artifactId>
-    <version>10</version>
+    <version>14-SNAPSHOT</version>
     <relativePath>../pom/pom.xml</relativePath>
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>10.1-SNAPSHOT</version><!-- convention: major = parent version -->
+  <version>10.1-SNAPSHOT</version>
+  <!-- convention: major = parent version -->
   <packaging>pom</packaging>
 
   <name>Plexus Components</name>
+  <description>Plexus Components parent POM.</description>
+  <url>https://codehaus-plexus.github.io/plexus-components/</url>
 
   <scm>
     <connection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</connection>
     <developerConnection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</developerConnection>
-    <url>http://github.com/codehaus-plexus/plexus-components</url>
     <tag>HEAD</tag>
+    <url>http://github.com/codehaus-plexus/plexus-components</url>
   </scm>
   <issueManagement>
     <system>github</system>
@@ -28,7 +31,8 @@
   <distributionManagement>
     <site>
       <id>github:gh-pages</id>
-      <url>scm:git:git@github.com:codehaus-plexus</url><!-- url used only for inheritance -->
+      <url>scm:git:git@github.com:codehaus-plexus</url>
+      <!-- url used only for inheritance -->
     </site>
   </distributionManagement>
 
@@ -57,6 +61,19 @@
     </dependencies>
   </dependencyManagement>
 
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>plexus.snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/plexus-snapshots</url>
+    </repository>
+  </repositories>
+
   <build>
     <plugins>
       <plugin>
@@ -72,17 +89,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <repositories>
-    <repository>
-      <id>plexus.snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/plexus-snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 </project>
