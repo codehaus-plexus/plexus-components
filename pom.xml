@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.codehaus.plexus</groupId>
     <artifactId>plexus</artifactId>
-    <version>14-SNAPSHOT</version>
-    <relativePath>../pom/pom.xml</relativePath>
+    <version>14</version>
+    <relativePath />
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>10.1-SNAPSHOT</version>
+  <version>14.1-SNAPSHOT</version>
   <!-- convention: major = parent version -->
   <packaging>pom</packaging>
 
