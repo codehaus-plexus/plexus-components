@@ -10,7 +10,7 @@
   </parent>
 
   <artifactId>plexus-components</artifactId>
-  <version>14.1-SNAPSHOT</version>
+  <version>14.1</version>
   <!-- convention: major = parent version -->
   <packaging>pom</packaging>
 
@@ -21,7 +21,7 @@
   <scm>
     <connection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</connection>
     <developerConnection>scm:git:git@github.com:codehaus-plexus/plexus-components.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>plexus-components-14.1</tag>
     <url>http://github.com/codehaus-plexus/plexus-components</url>
   </scm>
   <issueManagement>
@@ -37,7 +37,7 @@
   </distributionManagement>
 
   <properties>
-    <project.build.outputTimestamp>2022-06-09T20:50:21Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-08-06T14:18:09Z</project.build.outputTimestamp>
   </properties>
 
   <dependencyManagement>
